@@ -26,19 +26,29 @@
             <form>
                 <div>
                     <h3>Jenis Kelamin</h3>
-                    <input type="radio" id="=Jenis Kelamin" name="jenis kelamin" value="laki-laki"><label 
-                        for="=laki-laki">Laki-Laki</label>
-                    <input type="radio" id="=Jenis Kelamin" name="jenis kelamin" value="perempuan"><label 
-                        for="=perempuan">Perempuan</label>
+                    <input type="radio" id="=Jenis Kelamin" name="jenis kelamin" value="pria"><label 
+                        for="=pria">Pria</label>
+                    <input type="radio" id="=Jenis Kelamin" name="jenis kelamin" value="wanita"><label 
+                        for="=wanita">Wanita</label>
                 </div>
     
                 <div>
-                    <h3>Berat Badan</h3>
+                    <h3>Berat Badan (kg)</h3>
+                    <input type="number">
+                </div>
+
+                <div>
+                    <h3>Usia (tahun)</h3>
+                    <input type="number">
+                </div>
+
+                <div>
+                    <h3>Tinggi Badan (cm)</h3>
                     <input type="number">
                 </div>
     
                 <div class="form-btn-container">
-                    <button class="button bg-cornsilk">Hitung BMI</button>
+                    <button class="button bg-skyblue">Hitung BMI</button>
                     <button class="button bg-reset">Reset</button>
                 </div>
             </form>
@@ -59,6 +69,27 @@
 
         <aside>
             <section>
+                <header>
+                    <h4 class="title-kedua">Hasil</h4>
+                </header>
+            <form class="hasilnya">
+                <div>
+                    <h5 class="brt-badan-lebih">Berat Badan Lebih</h5>
+                </div>
+
+                <div>
+                    <h6 class="hasil-247">24.7</h6>
+                </div>
+
+                <div>
+                    <h7 class="anda-memiliki">Anda memiliki berat badan berlebih</h7>
+                </div>
+
+                <div>
+                    <button>Download Hasil BMI</button>
+                </div>
+            </form>
+
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
                     dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
                     book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It

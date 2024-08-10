@@ -19,7 +19,7 @@ aside {
 
 .button {
     height: 32px;
-    border: none;
+    border: 1px;
     border-radius: 4px;
 }
 
@@ -28,7 +28,7 @@ aside {
     margin-bottom: 16px;
 }
 
-.bg-cornsilk {
+.bg-skyblue {
     background-color: skyblue;
 }
 
@@ -42,7 +42,7 @@ input[type=number] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 4px;
     box-sizing: border-box;
     font-family: monospace;
@@ -52,3 +52,24 @@ input[type=number] {
   footer {
     text-align: center;
   }
+
+.hasilnya {
+    text-align: center;
+}
+
+.title-kedua {
+    font-size: x-large;
+}
+
+.brt-badan-lebih {
+    font-size: xx-large;
+}
+
+.hasil-247 {
+    font-size: xx-large;
+    font-weight: normal;
+}
+
+.anda-memiliki {
+    font-size: x-large;
+}
