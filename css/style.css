@@ -29,12 +29,12 @@ aside {
 }
 
 .bg-cornsilk {
-    background-color: cornsilk;
+    background-color: skyblue;
 }
 
 .bg-reset {
-    background-color: red;
-    color: white;
+    background-color: whitesmoke;
+    color: black;
 }
 
 input[type=number] {
