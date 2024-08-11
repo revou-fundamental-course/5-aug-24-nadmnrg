@@ -79,3 +79,36 @@ input[type=number] {
 .anda-memiliki {
     font-size: x-large;
 }
+
+.download-hasil {
+    background-color: skyblue;
+    color: black;
+    height: 38px;
+    border: 1px;
+    border-radius: 4px;
+}
+
+.btn-konsulregis {
+    background-color: skyblue;
+    color: black;
+    height: 40px;
+    border: 1px;
+    border-radius: 4px;
+}
+
+.penyakitnya {
+    text-align: center;
+}
+
+.beberapa {
+    font-size: larger;
+}
+
+.konsulregisvia {
+    background-color: skyblue;
+    color: black;
+    height: 40px;
+    border: 1px;
+    border-radius: 4px;
+}
+
