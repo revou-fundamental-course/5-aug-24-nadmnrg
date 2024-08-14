@@ -32,7 +32,7 @@
     
                 <div>
                     <h3>Berat Badan (kg)</h3>
-                    <input type="number">
+                    <input type="number" id="input-weight">
                 </div>
 
                 <div>
@@ -42,11 +42,11 @@
 
                 <div>
                     <h3>Tinggi Badan (cm)</h3>
-                    <input type="number">
+                    <input type="number" id="input-height">
                 </div>
     
                 <div class="form-btn-container">
-                    <button class="button bg-skyblue">Hitung BMI</button>
+                    <button class="button bg-skyblue" type="button" onclick="formValidate()">Hitung BMI</button>
                     <button class="button bg-reset">Reset</button>
                 </div>
             </form>
@@ -143,6 +143,8 @@
             <footer>
                 <p>Download Aplikasi</p>
             </footer>
+
+            <script src="js\script.js"></script>
        
         </aside>
 
