@@ -1,117 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 5px;
+    text-align: left;
+}
+
 .main-title {
-    text-align: center;
+    margin: 0;
+    text-align: left;
+    border: none;
+    color: rgb(0, 162, 255);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 10px 0;
+    cursor: pointer;
 }
 
 main {
     display: flex;
-}
-
-form {
-    padding: 12px;
-    background-color: aliceblue;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 aside {
-    padding: 48px;
+    width: 48%;
 }
 
-.button {
-    height: 32px;
-    border: 1px;
-    border-radius: 4px;
+article {
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
 }
 
 .form-btn-container {
-    margin-top: 24px;
-    margin-bottom: 16px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
 }
 
 .bg-skyblue {
-    background-color: skyblue;
+    background-color: #3cc5fc;
 }
 
 .bg-reset {
-    background-color: whitesmoke;
-    color: black;
+    background-color: #ff6f61;
 }
 
-.keunggulan-fitur {
-    font-size: large;
-    font-weight: lighter;
+.title-kedua {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-input[type=number] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-family: monospace;
-    font-size: 14px;
-  }
-
-  footer {
+.result-box {
     text-align: center;
-  }
-
-.aside-kanan {
-    padding: 60px 60px;
-}
-
-  .title-kedua {
-    font-size: x-large;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
 }
 
 .hasilnya {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.result-group {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.btn-container {
+    margin-top: 20px;
+}
+
+.btn-konsulregis, .download-hasil, .konsulregisvia {
+    background-color: #3cc5fc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.penyakit-group ul {
+    list-style-type: disc;
+    margin: 10px 0;
+    margin-left: 10px;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: #ffffff;
+    padding: 10px;
     text-align: center;
-    height: 350px;
-}
-
-.brt-badan-lebih {
-    font-size: x-large;
-}
-
-.hasil-247 {
-    font-size: xx-large;
-    font-weight: normal;
-}
-
-.anda-memiliki {
-    font-size: x-large;
-}
-
-.download-hasil {
-    background-color: skyblue;
-    color: black;
-    height: 38px;
-    border: 1px;
-    border-radius: 4px;
-}
-
-.btn-konsulregis {
-    background-color: skyblue;
-    color: black;
-    height: 40px;
-    border: 1px;
-    border-radius: 4px;
-}
-
-.penyakitnya {
-    text-align: center;
-}
-
-.beberapa {
-    font-size: larger;
-}
-
-.konsulregisvia {
-    background-color: skyblue;
-    color: black;
-    height: 40px;
-    border: 1px;
-    border-radius: 4px;
 }
 
 @media only screen and (max-width: 480px) {
