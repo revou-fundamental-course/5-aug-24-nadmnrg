@@ -30,32 +30,31 @@ function result(inputHeight, inputWeight) {
 
     if (bmi < 18.5) {
         category = 'Kekurangan Berat Badan';
-        advice = 'Anda berada di bawah berat badan ideal. Disarankan untuk meningkatkan asupan kalori dan nutrisi.';
-        second = 'Disarankan untuk meningkatkan asupan kalori dengan mengonsumsi makanan bergizi seimbang dan berkonsultasi dengan ahli gizi.';
+        advice = 'Anda berada dalam kategori "Kekurangan Berat Badan"';
+        second = 'Disarankan untuk meningkatkan asupan kalori dan nutrisi dengan <br> mengonsumsi makanan bergizi seimbang dan berkonsultasi dengan ahli gizi.';
     } else if (bmi >= 18.5 && bmi <= 24.9) {
-        category = 'Berat Badan Normal';
-        advice = 'Berat badan Anda berada dalam kisaran ideal. Pertahankan pola makan dan gaya hidup sehat.';
+        category = 'Berat Badan Normal (ideal)';
+        advice = 'Anda berada dalam kategori berat badan ideal. Pertahankan pola makan dan gaya hidup sehat.';
     } else if (bmi >= 25 && bmi <= 29.9) {
         category = 'Kelebihan Berat Badan';
-        advice = 'Anda memiliki berat badan berlebih. Pertimbangkan untuk mengurangi asupan kalori dan meningkatkan aktivitas fisik.';
+        advice = 'Anda berada dalam kategori berat badan berlebih. <br>Pertimbangkan untuk mengatur asupan kalori Anda dan tingkatkan aktivitas fisik / berolahraga.';
     } else {
         category = 'Kegemukan (Obesitas)';
-        advice = 'Anda berada dalam kategori obesitas. Disarankan untuk berkonsultasi dengan ahli gizi untuk penanganan lebih lanjut.';
-        second = 'Disarankan untuk segera menghubungi dokter atau ahli gizi untuk program penurunan berat badan yang aman dan efektif.';
+        advice = 'Anda berada dalam kategori Kegemukan (obesitas).';
+        second = 'Disarankan untuk segera berkonsultasi dengan menghubungi dokter atau ahli gizi <br> untuk program penurunan berat badan yang aman dan efektif.';
     }
 
     // Tampilkan hasil di elemen HTML //
     document.querySelector('.bmi-value').textContent = `BMI Anda adalah ${bmiValue}`;
     document.querySelector('.bmi-category').textContent = `Kategori: ${category}`;
-    document.querySelector('.hasilnya').textContent = `Saran: ${advice}`;
-    if (second) {
-        document.querySelector('.hasilnya').textContent += ` ${second}`;
-    }
+    document.querySelector('.hasilnya').innerHTML = ` ${advice} <br>${second}`;
+    document.getElementById('downloadResult').style.display = 'inline'; // Tampilkan tombol download //
 }
 
-document.querySelector('form').addEventListener('reset', function () {
+document.querySelector('form').addEventListener('reset', function() {
+    // Reset hasil perhitungan ketika form di-reset //
     document.querySelector('.bmi-value').textContent = '';
     document.querySelector('.bmi-category').textContent = 'Hasil perhitungan BMI akan muncul setelah Anda menghitung.';
-    document.querySelector('.hasilnya').textContent = '';
-    document.getElementById('downloadResult').style.display = 'none'; // Menyembunyikan tombol download
+    document.querySelector('.hasilnya').innerHTML = 'Jika Anda memiliki kekhawatiran mengenai hasil BMI Anda, konsultasikan dengan ahli gizi untuk mendapatkan panduan yang lebih mendetail dan program diet yang sesuai dengan kondisi tubuh Anda';
+    document.getElementById('downloadResult').style.display = 'none'; // Sembunyikan tombol download //
 });

@@ -6,17 +6,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     background-color: #f4f4f4;
 }
-
-/* header {
-    background-color: hsl(189, 83%, 57%);
-    color: #ffffff;
-    padding: 10px 20px;
-    text-align: center;
-} */
 
 .main-title {
     background-color: hsl(189, 83%, 57%);
@@ -110,6 +103,7 @@ input[type="number"] {
     align-items: center;
     justify-content: center;
     min-height: 250px;
+    margin-top: 20px;
 }
 
 .bmi-value {
@@ -126,10 +120,10 @@ input[type="number"] {
 }
 
 .hasilnya {
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 10px;
     font-size: 1rem;
-    color: #333;
+    color: #000000;
 }
 
 .btn-container {
@@ -175,9 +169,10 @@ footer {
 }
 
 .download-aplikasi {
+    width: 100%;
     max-width: 300px;
     height: auto;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 /* Untuk menyesuaikan tampilan website pada layar ponsel */
@@ -189,9 +184,21 @@ footer {
     .aside-kiri, .aside-kanan {
         width: 100%;
     }
+}
 
-    .button {
-        width: 100%;
-        margin: 5px 0;
+.download-hasil {
+    margin-top: 50px;
+    background-color: #499971;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 5px;
     }
+
+.download-bawah {
+    margin-top: 30px;
+    font-size: x-large;
 }
