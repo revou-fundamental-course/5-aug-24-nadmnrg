@@ -1,25 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
-header {
-    background-color: #f4f4f4;
-    padding: 5px;
-    text-align: left;
-}
+/* header {
+    background-color: hsl(189, 83%, 57%);
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+} */
 
 .main-title {
-    margin: 0;
+    background-color: hsl(189, 83%, 57%);
+    margin: 50;
+    padding: 20px 20px;
+    font-size: 2rem;
+    color: #ffffff;
     text-align: left;
-    border: none;
-    color: rgb(0, 162, 255);
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 1.5em;
-    margin: 10px 0;
-    cursor: pointer;
 }
 
 main {
@@ -28,34 +33,50 @@ main {
     padding: 20px;
 }
 
+.kalimat-pertama {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
 aside {
     width: 48%;
 }
 
 article {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 input[type="number"] {
     width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
 }
 
 .form-btn-container {
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .button {
     padding: 10px 20px;
     border: none;
+    border-radius: 4px;
     color: #fff;
     cursor: pointer;
+    font-size: 1rem;
+    margin-right: 10px;
 }
 
 .bg-skyblue {
@@ -66,11 +87,16 @@ input[type="number"] {
     background-color: #ff6f61;
 }
 
-.title-kedua {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 10px;
+.kategori {
+    margin-top: 50px;
+    font-size: x-large;
+}
+
+.kategori-bawah {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 10px;
 }
 
 .result-box {
@@ -86,44 +112,86 @@ input[type="number"] {
     min-height: 250px;
 }
 
-.hasilnya {
-    margin-top: 30px;
-    margin-left: 10px;
+.bmi-value {
+    font-size: 1.2rem;
 }
 
-.result-group {
-    margin-bottom: 20px;
-    margin-left: 10px;
+.bmi-category {
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+.title-kedua {
+    margin-top: 10px;
+    font-size: x-large;
+}
+
+.hasilnya {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
 }
 
 .btn-container {
     margin-top: 20px;
 }
 
-.btn-konsulregis, .download-hasil, .konsulregisvia {
+.btn-konsulregis, .konsulregisvia {
     background-color: #3cc5fc;
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
     margin: 5px;
 }
 
 .penyakit-group ul {
     list-style-type: disc;
+    padding-left: 20px;
     margin: 10px 0;
-    margin-left: 10px;
 }
 
 footer {
-    margin-top: 10px;
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 10px;
     text-align: center;
+    cursor: pointer;
 }
 
+.keunggulan-fitur {
+    text-align: left;
+    padding: 10px;
+    margin: 0;
+}
+
+.satuduatiga {
+    margin-top: 10px;
+}
+
+.hasil-perhitungan {
+    margin-bottom: 30px;
+}
+
+.download-aplikasi {
+    max-width: 300px;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Untuk menyesuaikan tampilan website pada layar ponsel */
 @media only screen and (max-width: 480px) {
     main {
         flex-direction: column;
+    }
+
+    .aside-kiri, .aside-kanan {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin: 5px 0;
     }
 }
